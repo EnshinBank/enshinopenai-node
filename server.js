@@ -12,7 +12,7 @@ app.use("/user", require("./routes/userRouter.js"));
 // app.use(express.static("./client/public"));
 // app.use(express.static(path.join(__dirname, 'client', 'public', 'index.html')));
 app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "public", "index.html"))
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
 })
 
 const PORT = 5000;
